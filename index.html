@@ -5,20 +5,60 @@
 </head>
 <body>
 
+
 <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 #myHeader {
     background-color:#4CAF50;
-    color: black;
+    color: white;
     padding: 20px;
     text-align: center;
 }
-</style>
 
+article1 {
+  float: left;
+  width: 45%;
+  background:SkyBlue;
+  padding: 5px;
+  
+}
 
-<h1 id="myHeader">Waypoint Manager</h1>
-<p>This is a paragraph.</p>
+article2 {
+  float: right;
+  width: 45%;
+  background: SkyBlue;
+  padding: 5px;
+  border: 2px solid #4CAF50
+}
 
-<style>
+footer {
+  background-color:#4CAF50;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+.p2 {
+  text-align: center;
+}
+
+.p3 {
+  text-align: right;
+}
+
+section:after {
+  content:"";
+  display: table;
+  clear: both;
+}
+
 .button1 {
   background-color: #4CAF50;
   border: none;
@@ -27,17 +67,62 @@
   text-align: center;
   font-size: 16px;
   cursor: pointer;
+  width: 200px;
+}
+
+.button2 {
+  background-color: skyblue;
+  border: none;
+  color: Black;
+  padding: 5px 5px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
 }
 
 .button:hover {
   background-color: green;
 }
+
 </style>
 
-<button class="button1">Styled Button</button>
+<header> </header>
+<h1 id="myHeader">Waypoint Manager</h1>
+</header>
 
-</body>
-</html>
+<section>
+  <article1>
+    
+    <p> Choose between the following options: </p>
+
+    <button class="button1">Creat new flight</button>
+     <br> <br>
+    <button class="button1">Load flight     </button>
+
+  </article1>
+
+  <article2>
+    Welcome to Waypoint Manager. A program develeped to make flying 
+    a simpler task when it comes to navigating. You enter, save or load
+    different flights, which can consist of different waypoints.
+    Additionaly, you can also add target points, airfeilds or anything 
+    else the you finde to be usefull dureing you flight, which has do 
+    with coordinates.
+
+    This program was develped with DCS F-14 tomcat in mind, as well as the 
+    DCS Mirage-2000C, but can basicly be used in any plane any flight sim.
+
+  </article2>
+</section>
+
+<br>
+
+<footer>
+
+  <p class= "p3"> <button class="button2"> Extract flight as .zip </button>
+  <button class= "button2"> Edit coord. preset list </button> </p> 
+  <p class= "p2"> Waypoint Manager made by Lucas Andersen 2019 </p>
+</footer>
 
 </body>
 </html>

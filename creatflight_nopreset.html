@@ -123,23 +123,22 @@ section:after {
   </article1>
 
   <article2>
-    <form action="">
+    <form onsubmit="WriteToFile(this)">
         Enter coordinats for Wp1(or initial):
-        enter N/S: <br>
-        <input class="coord" type="text" name="NS" value="N/S N 00&deg; 00' 00">
+        enter N/S: <br> <br>
+        <input class="coord" type="text" name="NS" id="NS" value="N/S N 00&deg; 00' 00">
         <br> <br>
 
-        <input class="coord" type="text" name="EW" value="E 000&deg; 00' 00">
+        <input class="coord" type="text" name="EW" id="EW" value="E 000&deg; 00' 00">
         <br> <br>
 
-        <input class="coord" type="text" name="alt" value="Altitude">
+        <input class="coord" type="text" name="alt" id="alt" value="Altitude">
         <br> <br>
 
-        <input class="coord" type="text" name="Desc" value="Description">
+        <input class="coord" type="text" name="Desc" id="Desc" value="Description">
         <br> <br>
 
-        <button class="button1" style="font-size: 14px; padding: 10px 15px;" 
-            onclick=""> Enter </button>
+        <input class="button1" type="submit" value="Enter" style="font-size: 14px; padding: 10px 15px;">
 
     </form>
     

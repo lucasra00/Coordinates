@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/lucasra00/Coordinates#readme",
   "dependencies": {
-    "electron": "^4.0.5"
+    "electron": "^9.1.0"
   },
   "private": true
 }
